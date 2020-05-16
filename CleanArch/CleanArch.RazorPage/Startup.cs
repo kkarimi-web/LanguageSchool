@@ -12,6 +12,7 @@ using CleanArch.RazorPage.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using CleanArch.Infra.Data.Context;
 
 namespace CleanArch.RazorPage
 {
@@ -33,6 +34,9 @@ namespace CleanArch.RazorPage
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             services.AddRazorPages();
+            services.AddDbContext<LanguageSchoolDbContext>(options => {
+                options.UseSqlServer(Configuration.GetConnectionString("LanguageSchoolDBConnection"));            
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

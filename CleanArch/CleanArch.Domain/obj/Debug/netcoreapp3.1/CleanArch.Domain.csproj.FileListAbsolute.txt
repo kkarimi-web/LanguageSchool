@@ -1,0 +1,9 @@
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Domain\bin\Debug\netcoreapp3.1\CleanArch.Domain.deps.json
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Domain\bin\Debug\netcoreapp3.1\CleanArch.Domain.dll
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Domain\bin\Debug\netcoreapp3.1\CleanArch.Domain.pdb
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Domain\obj\Debug\netcoreapp3.1\CleanArch.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Domain\obj\Debug\netcoreapp3.1\CleanArch.Domain.AssemblyInfoInputs.cache
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Domain\obj\Debug\netcoreapp3.1\CleanArch.Domain.AssemblyInfo.cs
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Domain\obj\Debug\netcoreapp3.1\CleanArch.Domain.dll
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Domain\obj\Debug\netcoreapp3.1\CleanArch.Domain.pdb
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Domain\obj\Debug\netcoreapp3.1\CleanArch.Domain.csprojAssemblyReference.cache
