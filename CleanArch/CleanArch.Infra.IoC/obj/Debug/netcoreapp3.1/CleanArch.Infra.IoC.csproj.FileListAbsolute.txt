@@ -1,0 +1,4 @@
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Infra.IoC\bin\Debug\netcoreapp3.1\CleanArch.Infra.IoC.deps.json
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Infra.IoC\bin\Debug\netcoreapp3.1\CleanArch.Infra.IoC.dll
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Infra.IoC\obj\Debug\netcoreapp3.1\CleanArch.Infra.IoC.AssemblyInfoInputs.cache
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Infra.IoC\obj\Debug\netcoreapp3.1\CleanArch.Infra.IoC.AssemblyInfo.cs
