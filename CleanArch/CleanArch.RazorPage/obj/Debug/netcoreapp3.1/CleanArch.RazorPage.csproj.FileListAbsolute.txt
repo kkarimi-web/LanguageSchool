@@ -88,3 +88,7 @@ C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.R
 C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.RazorPage\obj\Debug\netcoreapp3.1\CleanArch.RazorPage.Views.pdb
 C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.RazorPage\obj\Debug\netcoreapp3.1\CleanArch.RazorPage.dll
 C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.RazorPage\obj\Debug\netcoreapp3.1\CleanArch.RazorPage.pdb
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.RazorPage\bin\Debug\netcoreapp3.1\CleanArch.Application.dll
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.RazorPage\bin\Debug\netcoreapp3.1\CleanArch.Infra.IoC.dll
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.RazorPage\bin\Debug\netcoreapp3.1\CleanArch.Infra.IoC.pdb
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.RazorPage\bin\Debug\netcoreapp3.1\CleanArch.Application.pdb

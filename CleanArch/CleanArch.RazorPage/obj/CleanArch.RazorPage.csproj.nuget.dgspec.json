@@ -4,6 +4,67 @@
     "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.RazorPage\\CleanArch.RazorPage.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Application\\CleanArch.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Application\\CleanArch.Application.csproj",
+        "projectName": "CleanArch.Application",
+        "projectPath": "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Application\\CleanArch.Application.csproj",
+        "packagesPath": "C:\\Users\\Karimi-PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Karimi-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj": {
+                "projectPath": "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -148,6 +209,76 @@
         }
       }
     },
+    "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Infra.IoC\\CleanArch.Infra.IoC.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Infra.IoC\\CleanArch.Infra.IoC.csproj",
+        "projectName": "CleanArch.Infra.IoC",
+        "projectPath": "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Infra.IoC\\CleanArch.Infra.IoC.csproj",
+        "packagesPath": "C:\\Users\\Karimi-PC\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Infra.IoC\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Karimi-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Application\\CleanArch.Application.csproj": {
+                "projectPath": "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Application\\CleanArch.Application.csproj"
+              },
+              "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Infra.Data\\CleanArch.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Infra.Data\\CleanArch.Infra.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.200\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.RazorPage\\CleanArch.RazorPage.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -178,6 +309,9 @@
             "projectReferences": {
               "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Infra.Data\\CleanArch.Infra.Data.csproj": {
                 "projectPath": "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Infra.Data\\CleanArch.Infra.Data.csproj"
+              },
+              "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Infra.IoC\\CleanArch.Infra.IoC.csproj": {
+                "projectPath": "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Infra.IoC\\CleanArch.Infra.IoC.csproj"
               }
             }
           }

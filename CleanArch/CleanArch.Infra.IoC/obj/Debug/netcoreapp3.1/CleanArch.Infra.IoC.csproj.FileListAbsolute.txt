@@ -7,3 +7,10 @@ C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.I
 C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Infra.IoC\obj\Debug\netcoreapp3.1\CleanArch.Infra.IoC.csproj.CoreCompileInputs.cache
 C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Infra.IoC\obj\Debug\netcoreapp3.1\CleanArch.Infra.IoC.dll
 C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Infra.IoC\obj\Debug\netcoreapp3.1\CleanArch.Infra.IoC.pdb
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Infra.IoC\bin\Debug\netcoreapp3.1\CleanArch.Application.dll
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Infra.IoC\bin\Debug\netcoreapp3.1\CleanArch.Domain.dll
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Infra.IoC\bin\Debug\netcoreapp3.1\CleanArch.Infra.Data.dll
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Infra.IoC\bin\Debug\netcoreapp3.1\CleanArch.Application.pdb
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Infra.IoC\bin\Debug\netcoreapp3.1\CleanArch.Infra.Data.pdb
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Infra.IoC\bin\Debug\netcoreapp3.1\CleanArch.Domain.pdb
+C:\Users\Karimi-PC\source\repos\kkarimi-web\LanguageSchool\CleanArch\CleanArch.Infra.IoC\obj\Debug\netcoreapp3.1\CleanArch.Infra.IoC.csproj.CopyComplete
