@@ -1,71 +1,198 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
+/*@font-face {
+    font-family: 'B Yekan';
+    src: url('../fonts/BYekan.eot') format('eot'), url('../fonts/BYekan.woff') format('woff'), url('../fonts/BYekan.ttf') format('truetype');
+}*/
+@font-face {
+    font-family: Samim;
+    src: url('Samim-FD.eot');
+    src: url('Samim-FD.eot?#iefix') format('embedded-opentype'), url('Samim-FD.woff2') format('woff2'), url('Samim-FD.woff') format('woff'), url('Samim-FD.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Samim;
+    src: url('Samim-Bold-FD.eot');
+    src: url('Samim-Bold-FD.eot?#iefix') format('embedded-opentype'), url('Samim-Bold-FD.woff2') format('woff2'), url('Samim-Bold-FD.woff') format('woff'), url('Samim-Bold-FD.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Samim;
+    src: url('Samim-Medium-FD.eot');
+    src: url('Samim-Medium-FD.eot?#iefix') format('embedded-opentype'), url('Samim-Medium-FD.woff2') format('woff2'), url('Samim-Medium-FD.woff') format('woff'), url('Samim-Medium-FD.ttf') format('truetype');
+    font-weight: 500;
+}
+
+/** {
+    font-size: 100%;
+    font-family:'B Yekan' !important;
+}*/
+
 a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
 }
 
 /* Provide sufficient contrast against white background */
 a {
-  color: #0366d6;
+    color: #0366d6;
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  font-size: 14px;
+    font-size: 14px;
 }
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   html {
     font-size: 16px;
   }
-}
+}*/
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+    border-top: 1px solid #e5e5e5;
 }
+
 .border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
 }
 
 .box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
 }
 
 button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    font-size: 1rem;
+    line-height: inherit;
 }
 
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+    font-family: Samim;
+    /*'B Yekan';*/
 }
+/*responsive table*/
+@media only screen and (max-width: 760px), (min-device-width: 768px) and (max-device-width: 1024px) {
+    html {
+        font-size: 16px;
+    }
+
+    .table th, .table td {
+        padding-left: 50%;
+        border-top: 0;
+    }
+
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+        thead tr {
+            position: absolute;
+            top: -9999px;
+            left: -9999px;
+        }
+
+    tr {
+        border: 1px solid #ccc;
+    }
+
+    td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+    }
+
+        td:before {
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            width: 45%;
+            padding-right: 10px;
+            white-space: nowrap;
+        }
+}
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px; /* Vertically center the text there */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+.panel-heading {
+    background-color: #A8BBD9 !important;
+}
+    .panel-heading h4 {
+        font-family: 'Samim' !important;
+    }
+
+.grid{
+    border-collapse:collapse;
+    text-align:center;
+    font-family:Samim
+}
+
+.grid td{
+    padding:10px;
+    border:1px solid #c1c1c1;
+    color:#444;
+    font-size:1em;
+}
+
+    .grid th {
+        padding: 4px 2px;
+        color: white;
+        /*text-shadow: 1px 1px 0px #ffffff;*/
+        background: -webkit-gradient(linear,left bottom,left top,color-stop(0,#12213a),color-stop(1,#2e5a9e));
+        text-align: center;
+        border:1px solid;
+
+    }
+ .grid td a{
+     color:cornflowerblue;
+     text-decoration:none
+ }
+
+    .grid td a:hover {
+        color: #444;
+        text-decoration: none
+    }
+
+    .grid tr:nth-child(even) {
+        background: #FFF
+    }
+
+    .grid tr:nth-child(odd) {
+        background: #A8BBD9
+    }
+
+.clearbtnborder {
+    padding: 0;
+    border: none;
+    background: none;
 }

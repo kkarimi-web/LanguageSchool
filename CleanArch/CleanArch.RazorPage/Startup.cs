@@ -14,6 +14,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using CleanArch.Infra.Data.Context;
 using CleanArch.Infra.IoC;
+using FluentValidation.AspNetCore;
+using SmartBreadcrumbs.Extensions;
 
 namespace CleanArch.RazorPage
 {
@@ -29,16 +31,34 @@ namespace CleanArch.RazorPage
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+           
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("LanguageSchoolIdentityDB")));
+
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddRazorPages();
+
+            services.AddRazorPages().AddFluentValidation(fv=>fv.RegisterValidatorsFromAssemblyContaining<Startup>());
+
             services.AddDbContext<LanguageSchoolDbContext>(options => {
                 options.UseSqlServer(Configuration.GetConnectionString("LanguageSchoolDBConnection"));            
             });
-            RegisterServices(services);
+
+           services.AddBreadcrumbs(GetType().Assembly);
+
+            //,options =>
+            //{
+            //                options.TagName = "nav";
+            //                options.TagClasses = "";
+            //                options.OlClasses = "breadcrumb";
+            //                options.LiClasses = "breadcrumb-item";
+            //                options.ActiveLiClasses = "breadcrumb-item active";
+            //                options.SeparatorElement = "<li class=\"separator\">/</li>";
+            //});
+
+            RegisterServices(services);   
+          
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

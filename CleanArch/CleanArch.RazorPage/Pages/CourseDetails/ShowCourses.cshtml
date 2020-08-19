@@ -1,0 +1,92 @@
+﻿@page
+@model CleanArch.RazorPage.Pages.CourseDetails.ShowCoursesModel
+@{
+    ViewData["Title"] = "ShowCourses";
+}
+
+    <div style="direction:ltr;width:50%;float:left;padding-left:230px">
+        <h1>Courses</h1>
+    </div>
+    <div style="direction:rtl;width:50%;float:right">
+        <h1  style="font-family:'Samim' ">دروس</h1>
+    </div>
+
+<table style="width:80%" class="grid">
+    <tr>
+        <th style="width:20px;">ردیف</th>
+        <th style="width:50px;">نام</th>
+        <th style="width:50px;">توضیحات</th>
+        <th style="width:50px;">عکس</th>
+        <th style="width:20px;">ویرایش</th>
+        <th style="width:20px;">حذف</th>
+    </tr>
+    @foreach (var item in Model.courses)
+    {
+        <tr>
+            <td>@item.Id</td>
+            <td>@item.Name</td>
+            <td>@item.Description</td>
+            <td>@item.ImageUrl</td>
+            <td><a asp-page="SaveCourse" asp-route-id="@item.Id" class="btn fa fa-pencil-square-o"></a></td>
+            <td>
+                <form asp-page-handler="delete" method="post" asp-route-Id="@item.Id">
+                     <button class="fa fa-trash clearbtnborder" onclick="return confirm('آیا شما از حذف اطلاعات مطمئن هستید؟')" style="color:red;"></button>                 
+                </form>
+
+            </td>
+        </tr>
+    }
+</table>
+
+@{
+    var prevDisabled = !Model.courses.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.courses.HasNextPage ? "disabled" : "";
+}
+
+
+@*<a asp-page="/CourseDetails/ShowCourses"
+       asp-route-pageIndex="@(Model.courses.PageIndex - 1)"
+       class="btn btn-default @prevDisabled">
+        Previous
+    </a>
+    <a asp-page="/CourseDetails/ShowCourses"
+       asp-route-pageIndex="@(Model.courses.PageIndex + 1)"
+       class="btn btn-default @nextDisabled">
+        Next
+    </a>*@
+
+<div>
+    <ul class="pagination">
+
+        @if (Model.pageIndex > 1)
+        {
+            <li class="page-item">
+                <a class="page-link" asp-page="/CourseDetails/ShowCourses">First</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" asp-page="/CourseDetails/ShowCourses"
+                   asp-route-pageIndex="@(Model.courses.PageIndex - 1)">Previous</a>
+            </li>
+        }
+
+
+        @for (var i = 1; i <= Model.courses.TotalPages; i++)
+        {
+            <li class="page-item @(i ==Model.pageIndex ? "active" : "")">
+                <a asp-page="/CourseDetails/ShowCourses" asp-route-pageIndex="@i" class="page-link">@i</a>
+            </li>
+        }
+
+        @if (Model.pageIndex < Model.courses.TotalPages)
+        {
+            <li class="page-item">
+                <a class="page-link" asp-page="/CourseDetails/ShowCourses"
+                   asp-route-pageIndex="@(Model.courses.PageIndex + 1)">Next</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link" asp-page="/CourseDetails/ShowCourses"
+                   asp-route-pageIndex="@(Model.courses.TotalPages)">Last</a>
+            </li>
+        }
+    </ul>
+</div>

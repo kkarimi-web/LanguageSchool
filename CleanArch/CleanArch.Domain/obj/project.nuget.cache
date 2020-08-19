@@ -1,8 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "mv6NqyaRc7QC4YKdIhhuNpWfhyjOSEmnBBHunDGYCj6/XYYCGLF2uneKFZDsWpO8w+9K1b3AnRcdBeexDL6eAg==",
+  "dgSpecHash": "pSZLtKbmy3qTk/MtbA9DU4h4nbvHmpP9FNaDVQZ94JmceLd3oMCGY87gQzDyweeGvcko5hGM67hA1ET9eu6xdg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Karimi-PC\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
+    "C:\\Users\\Karimi-PC\\.nuget\\packages\\fluentvalidation.aspnetcore\\8.6.2\\fluentvalidation.aspnetcore.8.6.2.nupkg.sha512",
+    "C:\\Users\\Karimi-PC\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\8.6.2\\fluentvalidation.dependencyinjectionextensions.8.6.2.nupkg.sha512",
+    "C:\\Users\\Karimi-PC\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\2.1.0\\microsoft.extensions.dependencyinjection.abstractions.2.1.0.nupkg.sha512",
+    "C:\\Users\\Karimi-PC\\.nuget\\packages\\system.componentmodel.annotations\\4.4.1\\system.componentmodel.annotations.4.4.1.nupkg.sha512"
+  ],
   "logs": []
 }

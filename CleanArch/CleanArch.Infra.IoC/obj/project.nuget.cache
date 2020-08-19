@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "jXDASYzKGhnnFtjS1VY9NcWgWj8H6JwYeZhtouBk3NdLBEFS2ZTiIB/3dIivWO4BeGMNJCai1GeeIoIWX0wbbw==",
+  "dgSpecHash": "wRvpBj45vO5Fu0nxLk9ikErkMid1/C7K2ziVAEErf6EUIzNiymDQQ5CdbyTVcfh0O2Yj52GGhQccaUOMEpaTpw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Infra.IoC\\CleanArch.Infra.IoC.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Karimi-PC\\.nuget\\packages\\fluentvalidation\\8.6.2\\fluentvalidation.8.6.2.nupkg.sha512",
+    "C:\\Users\\Karimi-PC\\.nuget\\packages\\fluentvalidation.aspnetcore\\8.6.2\\fluentvalidation.aspnetcore.8.6.2.nupkg.sha512",
+    "C:\\Users\\Karimi-PC\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\8.6.2\\fluentvalidation.dependencyinjectionextensions.8.6.2.nupkg.sha512",
     "C:\\Users\\Karimi-PC\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Karimi-PC\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

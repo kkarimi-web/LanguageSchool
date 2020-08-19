@@ -1,0 +1,26 @@
+[
+  {
+    "outputFileName": "wwwroot/lib/jquery/dist/jquery.min.js",
+    "inputFiles": [
+      "wwwroot/lib/jquery/dist/jquery.js"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/lib/bootstrap/dist/css/bundleBootStarp.css",
+    "inputFiles": [
+      "wwwroot/lib/bootstrap/dist/css/bootstrap.css",
+      "wwwroot/lib/bootstrap/dist/css/bootstrap-rtl.css"
+    ]
+  },
+  {
+    "outputFileName": "wwwroot/css/bundleSite.css",
+    "inputFiles": [
+      "wwwroot/css/font-awesome.min.css",
+      "wwwroot/css/site.css"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    }
+  }
+]
