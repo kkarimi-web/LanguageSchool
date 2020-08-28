@@ -14,7 +14,7 @@ namespace CleanArch.Infra.Data.Configurations
             builder.Property(t => t.Name)
                    .IsRequired()
                    .HasMaxLength(200)
-                    ;
+                    ;          
         }
     }
 }
