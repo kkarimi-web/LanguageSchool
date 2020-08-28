@@ -9,11 +9,11 @@ namespace CleanArch.Application.Services
 {
     public class CourseTypeService : ICourseTypeService
     {
-        private ICourseTypeRepository CourseTypeRepository;
+        private ICourseTypeRepository _courseTypeRepository;
 
         public IEnumerable<CourseType> GetCourseTypes()
         {
-           return CourseTypeRepository.GetCourseTypes();
+           return _courseTypeRepository.GetCourseTypes();
         }
     }
 }
