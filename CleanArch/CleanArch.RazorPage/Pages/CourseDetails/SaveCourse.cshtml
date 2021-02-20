@@ -14,7 +14,7 @@
 </div>
 
 
-<form method="post" style="width:50%;">
+<form method="post" style="width:50%;" enctype="multipart/form-data">
     <div asp-validation-summary="ModelOnly" class="text-danger"></div>
     <input type="hidden" asp-for="CourseModel.Id" value=@(Model.CourseModel!=null?Model.CourseModel.Id:0) />
     <div class="form-group">
@@ -23,14 +23,58 @@
         <span asp-validation-for="CourseModel.Name" class="text-danger"></span>
     </div>
     <div class="form-group">
+        <label class="control-label" asp-for="CourseModel.CourseTypeId">نوع درس</label>
+        <select asp-for="CourseModel.CourseTypeId" asp-items="Model.coursetypelist">
+            <option value="">انتخاب کنید ...</option>
+        </select>
+        @* <vc:course-type id=@(Model.CourseModel!=null?Convert.ToInt32(Model.CourseModel.CourseTypeId):0)></vc:course-type>*@
+        <span asp-validation-for="CourseModel.CourseTypeId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label class="form-check-label" asp-for="CourseModel.IsActive">فعال</label>
+        <input class="form-check-input" asp-for="CourseModel.IsActive" type="checkbox" checked="checked" value="true" />
+    </div>
+    <div class=" form-group k-content">
+        <label class="control-label" asp-for="CourseModel.FromDateShamsi">از تاریخ</label>
+        <input asp-for="CourseModel.FromDateShamsi" id="datepickerShamsi" />
+        <label class="control-label" asp-for="CourseModel.ToDateShamsi">تا تاریخ</label>
+        <input asp-for="CourseModel.ToDateShamsi" id="datepickerShamsiTodate" />
+    </div>
+    <div class="form-group">
         <label class="control-label" asp-for="CourseModel.Description">توضیحات</label>
         <input class="form-control" asp-for="CourseModel.Description" />
     </div>
-    <div class="form-group">
-        <label class="control-label" asp-for="CourseModel.ImageUrl">عکس</label>
-        <input class="form-control" asp-for="CourseModel.ImageUrl" />
-        <span asp-validation-for="CourseModel.ImageUrl" class="text-danger"></span>
+    @*@if ((Model.CourseModel == null) || (String.IsNullOrEmpty(Model.CourseModel.ImageId)))
+        {
+            <div class="form-group">
+                <label class="control-label" asp-for="CourseModel.UploadFile">عکس</label>
+                <input class="form-control" asp-for="CourseModel.UploadFile" type="file"/>
+                <span asp-validation-for="CourseModel.UploadFile" class="text-danger"></span>
+            </div>
+
+        }
+
+        @if (Model.CourseModel != null)
+        {
+            @if (!String.IsNullOrEmpty(Model.CourseModel.ImageId))
+            {
+                var d = new Dictionary<string, string> { { "pathlocator", @Model.CourseModel.ImageId.Replace('/', '-') }, { "RefrenceTable", "Courses" }, { "ColumnName", "ImageId" } };
+                <label class="control-label">عکس</label>
+                <div style="height:25px;width:30%;">
+
+                    <div style="float:right">
+                        <a asp-page="../DownloadFile" asp-route-pathlocator=@Model.CourseModel.ImageId.Replace('/','-') target="_blank" class="fa fa-download">دانلود فایل</a>
+
+                    </div>
+                    <div style="float:left">
+                        <a asp-page="../DeleteFiles" asp-all-route-data="d" style="color:red;" target="_blank" class="fa fa-trash">حذف فایل</a>
     </div>
+    </div>
+
+    }
+    }
+    *@
+
     <input type="submit" class="btn btn-success" value="ثبت" />
     <a class="btn btn-danger" asp-page="SaveCourse" asp-rout-id="id">انصراف</a>
     @* <input type="submit" value="جدید" class="btn  btn-primary" asp-page-handler="New" />*@
@@ -42,4 +86,12 @@
 
 @section Scripts {
     @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+    <script>
+        $(document).ready(function () {
+            // create DatePicker from input HTML element
+            $("#datepickerShamsi").kendoDatePickerShamsi({ culture: "fa-IR" });
+            $("#datepickerShamsiTodate").kendoDatePickerShamsi({ culture: "fa-IR" });
+        });
+    </script>
 }

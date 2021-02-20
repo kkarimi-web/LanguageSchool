@@ -16,7 +16,7 @@
         <th style="width:20px;">ردیف</th>
         <th style="width:50px;">نام</th>
         <th style="width:50px;">توضیحات</th>
-        <th style="width:50px;">عکس</th>
+        @*<th style="width:50px;">عکس</th>*@
         <th style="width:20px;">ویرایش</th>
         <th style="width:20px;">حذف</th>
     </tr>
@@ -26,7 +26,7 @@
             <td>@item.Id</td>
             <td>@item.Name</td>
             <td>@item.Description</td>
-            <td>@item.ImageUrl</td>
+         @*   <td>@item.ImageUrl</td>*@
             <td><a asp-page="SaveCourse" asp-route-id="@item.Id" class="btn fa fa-pencil-square-o"></a></td>
             <td>
                 <form asp-page-handler="delete" method="post" asp-route-Id="@item.Id">
