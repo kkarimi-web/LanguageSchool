@@ -14,7 +14,9 @@ namespace CleanArch.Infra.Data.Configurations
             builder.Property(t => t.Name)
                    .IsRequired()
                    .HasMaxLength(200)
-                    ;          
+                    ;
+           // builder.Ignore(c => c.UploadFiles);
+           // builder.Ignore(d => d.SecondUploadFiles);
         }
     }
 }
