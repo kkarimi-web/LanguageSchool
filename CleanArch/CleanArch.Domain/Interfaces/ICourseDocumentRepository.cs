@@ -7,6 +7,7 @@ namespace CleanArch.Domain.Interfaces
 {
   public interface ICourseDocumentRepository:IRepository<CourseDocument>
     {
-       // void Add(CourseDocument T,int courseid);
+        // void Add(CourseDocument T,int courseid);
+        CourseDocument GetByCourseId(int id);
     }
 }

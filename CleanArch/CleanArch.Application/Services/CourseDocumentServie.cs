@@ -49,5 +49,10 @@ namespace CleanArch.Application.Services
                 transactionScope.Complete();
             }
         }
+
+        public CourseDocument GetByCourseId(int id)
+        {
+           return _unitofwork.courseDocumentRepository.GetByCourseId(id);
+        }
     }
 }

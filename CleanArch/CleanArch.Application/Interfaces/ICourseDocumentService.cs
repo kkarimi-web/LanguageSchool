@@ -8,5 +8,6 @@ namespace CleanArch.Application.Interfaces
     public interface ICourseDocumentService
     {
         void Add(CourseDocument T,int courseId);
+        CourseDocument GetByCourseId(int id);
     }
 }
