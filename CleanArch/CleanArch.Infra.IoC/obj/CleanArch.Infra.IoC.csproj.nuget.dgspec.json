@@ -34,6 +34,9 @@
             "projectReferences": {
               "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj": {
                 "projectPath": "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Domain\\CleanArch.Domain.csproj"
+              },
+              "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Infra.Data\\CleanArch.Infra.Data.csproj": {
+                "projectPath": "C:\\Users\\Karimi-PC\\source\\repos\\kkarimi-web\\LanguageSchool\\CleanArch\\CleanArch.Infra.Data\\CleanArch.Infra.Data.csproj"
               }
             }
           }
@@ -46,6 +49,16 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[2.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -177,6 +190,10 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[3.1.4, )"
