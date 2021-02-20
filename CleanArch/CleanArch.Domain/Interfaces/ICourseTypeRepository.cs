@@ -2,11 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace CleanArch.Domain.Interfaces
 {
-   public interface ICourseTypeRepository
+    public interface ICourseTypeRepository
     {
-       IEnumerable<CourseType> GetCourseTypes();       
+        Task<IEnumerable<CourseType>> GetCourseTypesAsync();
+        Task<IEnumerable<CourseType>> GetCourseTypesAsync(int id);
     }
 }
