@@ -23,13 +23,13 @@ namespace CleanArch.Application.Services
             _unitOfWork = unitOfWork;
         }
 
-        public IEnumerable<Course> GetCourses()
+        public CourseViewModel GetCourses()
         {
-            //return new CourseViewModel
-            //{
-            //    Courses = _courseRepository.GetCourses()
-            //};
-            return _unitOfWork.courseRepository.GetAll();
+            return new CourseViewModel
+            {
+                Courses = _unitOfWork.courseRepository.GetAll()
+        };
+          //  return _unitOfWork.courseRepository.GetAll();
         }
 
         public void Add(Course t)
