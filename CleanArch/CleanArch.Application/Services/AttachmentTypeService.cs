@@ -17,17 +17,19 @@ namespace CleanArch.Application.Services
         }
         public void Add(AttachmentType t)
         {
-            throw new NotImplementedException();
+            _unitOfWork.attachmentTypeRepository.Add(t);
         }
 
         public void Delete(int Id)
         {
-            throw new NotImplementedException();
+            AttachmentType T = _unitOfWork.attachmentTypeRepository.GetById(Id);
+            if (T != null)
+                _unitOfWork.attachmentTypeRepository.Delete(T);
         }
 
         public void Update(AttachmentType T)
         {
-            throw new NotImplementedException();
+            _unitOfWork.attachmentTypeRepository.Update(T);
         }
     }
 }
