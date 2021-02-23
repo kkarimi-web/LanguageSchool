@@ -4,6 +4,7 @@ using CleanArch.Infra.Data.Context;
 using CleanArch.Infra.Data.Infrastructure;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http.Headers;
 using System.Text;
 
@@ -18,6 +19,11 @@ namespace CleanArch.Infra.Data.Repository
         {
             //_ctx = ctx;
            // _fileRepository = fileRepository;
+        }
+
+        public CourseDocument GetByCourseId(int id)
+        {
+           return  _context.CourseDocument.Where(c => c.Courseid == id).FirstOrDefault();
         }
         //public void Add(CourseDocument T,int courseid)
         //{
