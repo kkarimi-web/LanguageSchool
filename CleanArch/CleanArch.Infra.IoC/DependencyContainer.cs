@@ -24,6 +24,7 @@ namespace CleanArch.Infra.IoC
             services.AddScoped<IFileRepositoryService, FileRepositoryService>();
             services.AddScoped<ICourseDocumentService, CourseDocumentServie>();
             services.AddScoped<IPersonService, PersonService>();
+            services.AddScoped<IAttachmentTypeService, AttachmentTypeService>();
 
             //Infra.Data Layer
             services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
@@ -33,9 +34,11 @@ namespace CleanArch.Infra.IoC
             services.AddScoped<IFileRepository, FileRepository>();
             services.AddScoped<ICourseDocumentRepository, CourseDocumentRepository>();
             services.AddScoped<IPersonRepository, PersonRepository>();
+            services.AddScoped<IAttachmentTypeRepository, AttachmentTypeRepository>();
             
             //Domain layer
             services.AddSingleton<IValidator<Course>, CourseValidation>();
+            services.AddSingleton<IValidator<Person>, PersonValidation>();
         }
     }
 }

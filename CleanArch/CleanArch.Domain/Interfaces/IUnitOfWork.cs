@@ -12,6 +12,7 @@ namespace CleanArch.Domain.Interfaces
         ICourseDocumentRepository courseDocumentRepository { get; }
         IFileRepository fileRepository { get; }
         IPersonRepository personRepository { get; }
+        IAttachmentTypeRepository attachmentTypeRepository{get;}
         void Commit();
         Task<int> CommitAsync();
     }

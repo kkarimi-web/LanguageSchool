@@ -21,6 +21,8 @@ namespace CleanArch.Infra.Data.Infrastructure
 
         public IPersonRepository personRepository { get; private set; }
 
+        public IAttachmentTypeRepository attachmentTypeRepository { get; private set; }
+
         public UnitOfWork(LanguageSchoolDbContext context)
         {
             _context = context;
@@ -28,6 +30,7 @@ namespace CleanArch.Infra.Data.Infrastructure
             courseDocumentRepository = new CourseDocumentRepository(_context);
             fileRepository = new FileRepository(_context);
             personRepository = new PersonRepository(_context);
+            attachmentTypeRepository = new AttachmentTypeRepository(_context);
         }
 
         public void Commit()
