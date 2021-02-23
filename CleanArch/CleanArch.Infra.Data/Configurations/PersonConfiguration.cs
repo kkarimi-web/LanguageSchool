@@ -16,6 +16,7 @@ namespace CleanArch.Infra.Data.Configurations
             builder.Property(x => x.LastName).IsRequired().HasMaxLength(30);
             builder.Property(x => x.FatherName).IsRequired().HasMaxLength(30);
             builder.Property(x => x.NationalCode).IsRequired().HasMaxLength(10);
+          
         }
     }
 }

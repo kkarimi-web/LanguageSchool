@@ -23,15 +23,17 @@ namespace CleanArch.Infra.IoC
             services.AddScoped<ICourseTypeService, CourseTypeService>();
             services.AddScoped<IFileRepositoryService, FileRepositoryService>();
             services.AddScoped<ICourseDocumentService, CourseDocumentServie>();
+            services.AddScoped<IPersonService, PersonService>();
 
             //Infra.Data Layer
+            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<ICourseRepository, CourseRepository>();
             services.AddScoped<ICourseTypeRepository, CourseTypeRepository>();
             services.AddScoped<IFileRepository, FileRepository>();
             services.AddScoped<ICourseDocumentRepository, CourseDocumentRepository>();
-            services.AddScoped(typeof(IRepository<>), typeof(Repository<>));
-            services.AddScoped<IUnitOfWork,UnitOfWork>();
-
+            services.AddScoped<IPersonRepository, PersonRepository>();
+            
             //Domain layer
             services.AddSingleton<IValidator<Course>, CourseValidation>();
         }
